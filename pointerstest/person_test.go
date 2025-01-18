@@ -1,5 +1,5 @@
 
-package pointerstest
+package main
 
 import (
 	"testing"

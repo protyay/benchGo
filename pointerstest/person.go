@@ -1,5 +1,5 @@
 
-package pointerstest
+package main
 
 type Person struct {
 	FirstName    string
