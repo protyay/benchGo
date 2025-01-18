@@ -1,3 +1,4 @@
-module main
+
+module slicetest
 
 go 1.21
