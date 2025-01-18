@@ -9,9 +9,14 @@ func main() {
 	fmt.Println("Hello, World!")
 }
 type Person struct {
-	FirstName string
-	LastName  string
-	Age       int
+	FirstName    string
+	LastName     string
+	Age          int
+	Address      string
+	PhoneNumbers []string
+	Emails       []string
+	Notes        map[string]string
+	Friends      []*Person
 }
 
 func MakePerson(firstName string, lastName string, age int) Person {
