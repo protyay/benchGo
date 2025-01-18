@@ -1,9 +1,5 @@
-package main
 
-import (
-	"fmt"
-	"pointerstest"
-)
+package pointerstest
 
 type Person struct {
 	FirstName    string
@@ -24,11 +20,10 @@ func MakePerson(firstName string, lastName string, age int) Person {
 	}
 }
 
-
-func main() {
-	p1 := pointerstest.MakePerson("John", "Doe", 30)
-	p2 := pointerstest.MakePersonPointer("Jane", "Smith", 25)
-
-	fmt.Printf("Stack allocation: %+v\n", p1)
-	fmt.Printf("Heap allocation: %+v\n", p2)
+func MakePersonPointer(firstName string, lastName string, age int) *Person {
+	return &Person{
+		FirstName: firstName,
+		LastName:  lastName,
+		Age:       age,
+	}
 }
